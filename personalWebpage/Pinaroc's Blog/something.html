@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Me | My Purple Blog</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f4fc;
+            color: #382347;
+            line-height: 1.7;
+        }
+
+        /* NAVIGATION */
+        header {
+            background: #301644;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #e5c9ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #c084fc;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(
+                135deg, #301644, #75439b
+            );
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            color: #eadcf5;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* PROFILE */
+        .profile {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            box-shadow: 0 4px 12px rgba(70,30,100,0.1);
+        }
+
+        .profile img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .profile h2 {
+            color: #54256f;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            color: #705a80;
+        }
+
+        /* GALLERY */
+        .gallery {
+            margin-top: 55px;
+        }
+
+        .gallery h2,
+        .interests h2 {
+            color: #54256f;
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            background: #e9d5ff;
+            transition: 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        /* INTERESTS */
+        .interests {
+            background: #eee2f8;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+
+        .interests p {
+            color: #705a80;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #301644;
+            color: #e5c9ff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile img {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <h2>ABOUT ME</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#blog">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Get to Know Me!</h1>
+        <p>A little story about who I am and what I love.</p>
+    </section>
+
+    <main class="container">
+
+        <!-- PROFILE / INTRODUCTION -->
+        <section class="profile">
+
+            <img src="c:\Users\jethp\OneDrive\Pictures\Screenshots\Screenshot 2026-11-12 233719.png"
+                 alt="My Profile Picture">
+
+            <div>
+                <h2>Hello, I'm Jeth!</h2>
+
+                <p>
+                    Hey there! I'm Grant Jethro Pinaroc, and welcome to my little corner on the internet. a place where I get to share a glimpse of who I am beyond the screen.
+
+Below, you'll find a small gallery filled with the things that make me happy, the hobbies I enjoy, the interests that keep me inspired, and the little things I simply can't get enough of. From my favorite activities to the things I'm passionate about, every picture tells a little story about me.
+
+Feel free to explore, take a look around, and get to know me through the things I love. After all, it's the little things that make us who we are.
+
+Thanks for stopping by, and enjoy exploring my world! 💜
+                </p>
+
+               
+                <p>
+                   Here are some pictures that showcase the things I love, 
+                   the activities I enjoy, and the things I do in my life.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- FIVE-PICTURE GALLERY -->
+        <section class="gallery">
+
+            <h2>My Little Gallery</h2>
+
+            <div class="gallery-grid">
+
+                <img src="c:\Users\jethp\Downloads\902171435_1439437511067368_5509877541323489507_n.jpg"
+                     alt="Gallery Photo 1">
+
+                <img src="c:\Users\jethp\OneDrive\Pictures\Screenshots\Screenshot 2026-11-12 202242.png"
+                     alt="Gallery Photo 2">
+
+                <img src="c:\Users\jethp\Downloads\902244580_1718424759617537_5816015982647591698_n.jpg"
+                     alt="Gallery Photo 3">
+
+                <img src="c:\Users\jethp\OneDrive\Pictures\Screenshots\Screenshot 2026-11-12 231542.png"
+                     alt="Gallery Photo 4">
+
+                <img src="c:\Users\jethp\OneDrive\Pictures\Screenshots\Screenshot 2026-11-12 231658.png"
+                     alt="Gallery Photo 5">
+
+            </div>
+
+        </section>
+
+        <!-- INTERESTS -->
+        <section class="interests">
+
+            <h2>My Interests & Hobbies</h2>
+
+            <p>💻 Technology and Programming</p>
+
+            <p>🎸 Playing Guitar</p>
+
+            <p>🎵 Listening to Music</p>
+
+            <p>🚗 Everything about f1</p>
+
+            <p>☁️ I love the sky</p>
+
+            <p>🚗 a big car enthusiast</p>
+
+            <p>🌱 Personal Growth and Self-Improvement</p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>THANKYOU FOR VISITING MY LIFE BEHIND THE SCREEN!</p>
+    </footer>
+
+</body>
+</html>
