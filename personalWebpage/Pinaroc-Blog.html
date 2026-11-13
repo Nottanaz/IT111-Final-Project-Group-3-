@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>something about me</title>
+
+    <style>
+        /* GENERAL */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f4fc;
+            color: #382347;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        header {
+            background-color: #301644;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #e5c9ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #c084fc;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(
+                135deg, #301644, #75439b
+            );
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #eadcf5;
+        }
+
+        .hero button {
+            background-color: #d8b4fe;
+            color: #301644;
+            border: none;
+            padding: 12px 28px;
+            margin-top: 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #4c2167;
+        }
+
+        /* BLOG CARDS */
+        .blog-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(70, 30, 100, 0.1);
+            transition: 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 22px;
+        }
+
+        .blog-content small {
+            color: #9868b5;
+        }
+
+        .blog-content h3 {
+            margin: 10px 0;
+            color: #4c2167;
+        }
+
+        .blog-content p {
+            color: #756780;
+        }
+
+        .blog-content a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #783ca0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .blog-content a:hover {
+            color: #b06cda;
+        }
+
+        /* ABOUT */
+        .about {
+            background-color: #eee2f8;
+            padding: 45px 30px;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 60px;
+        }
+
+        .about h2 {
+            color: #54256f;
+        }
+
+        .about p {
+            max-width: 650px;
+            margin: 15px auto;
+            color: #705a80;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #301644;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: #e5c9ff;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <h2>My personal blog</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- WELCOME SECTION -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm Jeth!</h1>
+
+        <p>
+            Welcome to my little corner of the internet! I'm 19 years old and an aspiring IT professional with a passion for technology and continuous learning. If you don't know me yet, I'm someone who enjoys playing the guitar in my free time. Music has always been a big part of my life, and it's something I truly love and enjoy the most. 🎸🎶
+        </p>
+
+        <button>Welcome to My Blog</button>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <main class="container" id="blog">
+
+        <h2 class="section-title">Latest Blog Posts</h2>
+
+        <div class="blog-grid">
+
+        
+
+            <article class="blog-card">
+                <img
+                    src="c:\Users\jethp\Downloads\download.jpe"
+                    alt="Beautiful landscape">
+
+                <div class="blog-content">
+                    <h3>Something about me!</h3>
+                    <p>
+                       MY FAVORITE THINGS
+                    </p>
+                    <a href="something.html">Read More →</a>
+                </div>
+
+        <!-- ABOUT ME -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Hi! I'm Jeth. Welcome to my little
+                corner of the internet. I love sharing stories, and collecting memories.
+            </p>
+
+            <p>
+                Thank you for visiting my personal blog!
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>WELCOME TO MY CORNER!</p>
+    </footer>
+
+</body>
+</html>
